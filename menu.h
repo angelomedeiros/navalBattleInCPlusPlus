@@ -10,6 +10,7 @@ using namespace std;
 void menu() {
 
     int option = 0;
+    string playerName;
 
     while (option < 1 || option > 3) {
         cout << "Welcome to the naval battle game\n";
@@ -27,7 +28,11 @@ void menu() {
 
         case 1:
             cout << "The game started!\n";
-            play();
+
+            cout << "\nEnter your name: ";
+            cin >> playerName;
+
+            play(playerName);
             break;
         case 2:
             cout << "About the game\n";
