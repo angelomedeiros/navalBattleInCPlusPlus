@@ -5,9 +5,9 @@
 
 using namespace std;
 
-int main() {
-    mainMenu();
+int main()
+{
+    menu();
 
     return 0;
 }
-
